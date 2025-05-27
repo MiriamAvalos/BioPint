@@ -1,4 +1,5 @@
 import React from 'react';
+import WhatsappButton from '../components/WhatsappButton';
 
 function Home() {
   
@@ -7,6 +8,7 @@ function Home() {
     <>
       
      <p>soy el home</p>
+         <WhatsappButton />
     </>
   )
 }
