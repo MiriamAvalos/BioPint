@@ -1,27 +1,45 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import '../src/App.css';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
 import Products from './pages/Products';
 import Contact from './pages/Contact';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js'
+
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <h1>BioTint</h1>
-
-        {/* Navegación entre secciones usando Link */}
-        <nav>
-          <ul>
-            <li><Link to="/">Inicio</Link></li>
-            <li><Link to="/about-us">Nosotros</Link></li>
-            <li><Link to="/products">Productos</Link></li>
-            <li><Link to="/contact">Contacto</Link></li>
-          </ul>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+          <div className="container-fluid">
+            <Link className="navbar-brand" to="/"></Link>
+            <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span className="navbar-toggler-icon"></span>
+            </button>
+            <div className="collapse navbar-collapse" id="navbarNav">
+              <ul className="navbar-nav ms-auto">
+                <li className="nav-item">
+                  <Link className="nav-link" to="/">INICIO</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/about-us">NOSOTROS</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/products">PRODUCTOS</Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/contact">CONTACTO</Link>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
 
-        {/* Definición de las rutas */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about-us" element={<AboutUs />} />

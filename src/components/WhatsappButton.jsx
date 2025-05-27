@@ -1,5 +1,5 @@
-import React from 'react';
-import '../components/WhatsappButton.css';
+import '../components/WhatsappButton.css';import React from 'react';
+
 import whatsappImg from '../assets/images/whatsApp_.png';
 
 const WhatsappButton = () => {
