@@ -4,7 +4,7 @@ import whatsappImg from '../assets/images/whatsApp_.png';
 
 
 const WhatsappButton = () => {
-  const phoneNumber = '+0000000000'; // Reemplaza con tu número real
+  const phoneNumber = '+5212241091176'; // Reemplaza con tu número real
 
   const openWhatsApp = () => {
     window.open(`https://wa.me/${phoneNumber}`, '_blank');
