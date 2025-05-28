@@ -45,6 +45,8 @@
   font-size: 1rem;
   line-height: 1.6;
   color: var(--oscuro);
+  font-family: 'Nexa', sans-serif;
+  color: var(--oscuro);
 }
 
 /* Para la sección misión y visión lado a lado en pantallas grandes */
@@ -71,7 +73,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--verde);
+  background-color: var(--beige);
   height: 400px;
 }
 
