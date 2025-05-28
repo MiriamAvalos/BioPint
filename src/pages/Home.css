@@ -29,14 +29,19 @@
   color: var(--azul-pet);
   margin-bottom: 2rem;
 }
+.subtitle2 {
+  letter-spacing: 2px;
+}
 
 .section-title {
   font-family: 'Akira Expanded', sans-serif;
   font-weight: 900;
   color: var(--verde);
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-bottom: 1rem;
   font-size: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .valores p,
@@ -49,6 +54,12 @@
   color: var(--oscuro);
 }
 
+.quienesSomos {
+  text-align: center;
+}
+.objetivo {
+  text-align: center;
+}
 /* Para la sección misión y visión lado a lado en pantallas grandes */
 .mision-vision {
   display: flex;
@@ -82,6 +93,16 @@
   width: auto;
   object-fit: none;
 }
+.valores ul {
+  list-style-type: disc;
+}
+
+.valores li {
+  font-family: 'Nexa', sans-serif;
+  color: var(--oscuro);
+}
+
+
 
 /* Responsive: en pantallas chicas, todo en columna */
 @media (max-width: 600px) {
