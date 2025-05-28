@@ -1,8 +1,37 @@
+.footer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+    background-color: var(--oscuro);
+    color: #fff;
+}
+
+body {
+    padding-top: 70px;
+}
+
+
+.footer .container {
+    text-align: center;
+
+}
+
+.footer .container .mb-3 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
 .social-icon {
-  transition: transform 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-  display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
 }
 
 .social-icon:hover {
-  transform: translateY(-2px) scale(1.05); 
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.2);
 }
