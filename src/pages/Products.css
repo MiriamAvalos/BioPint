@@ -1,0 +1,118 @@
+.productsTittle{
+        font-family: 'Akira Expanded', sans-serif;
+    font-weight: 900;
+    color: var(--verde);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+}
+.products-section {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Nexa', sans-serif;
+  color: #333;
+  background: white;
+}
+
+.products-section h2 {
+  font-family: 'Akira Expanded', sans-serif;
+  font-weight: 900;
+  text-align: center;
+
+
+}
+
+.products-section p {
+  font-size: 1.15rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  line-height: 1.6;
+  color: #0B131B; /* Negro oscuro */
+  font-family: 'Nexa', sans-serif;
+}
+
+.product-card {
+  margin-bottom: 2.5rem;
+  border: 1px solid #ccc;
+  padding: 1.4rem 1.8rem;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.07);
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+}
+
+.product-card h3 {
+  font-family: 'Akira Expanded', sans-serif;
+  font-weight: 900;
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  color: #059AB0; /* Azul PET */
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.principal-label {
+  color: #227201; /* Verde ambiental */
+  font-weight: 700;
+  margin-left: 0.6rem;
+  font-size: 1rem;
+  font-family: 'Nexa', sans-serif;
+  text-transform: none;
+}
+
+.product-card p {
+  font-family: 'Nexa', sans-serif;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  color: #555;
+}
+
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 1.4rem;
+  justify-content: center;
+}
+
+.images-container img {
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.images-container img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.presentations-list {
+  list-style-type: disc;
+  padding-left: 1.8rem;
+  color: #059AB0; /* Azul PET */
+  font-family: 'Nexa', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.presentations-list li {
+  margin-bottom: 0.45rem;
+}
+
+@media (max-width: 700px) {
+  .images-container {
+    justify-content: center;
+  }
+  .images-container img {
+    width: 120px;
+  }
+}
