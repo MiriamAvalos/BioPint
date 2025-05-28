@@ -3,9 +3,9 @@
 /* Variables de color */
 :root {
   --verde: #227201;
-  --azul-pet: #059AB0;
-  --oscuro: #0B131B;
-  --beige: #B2A489;
+  --azul-pet: #059ab0;
+  --oscuro: #0b131b;
+  --beige: #b2a489;
 }
 
 .home-container {
@@ -57,6 +57,28 @@
 
 .mision-vision div {
   flex: 1 1 45%;
+}
+
+.carousel {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verde);
+  height: 400px;
+}
+
+.carousel img {
+  max-height: 100%;
+  width: auto;
+  object-fit: none;
 }
 
 /* Responsive: en pantallas chicas, todo en columna */
