@@ -258,6 +258,30 @@ function Home() {
             <strong>reducción de residuos plásticos.</strong>
           </p>
         </section>
+
+        <section className='valores' data-aos='flip-down'>
+  <h2 className='section-title'>Presencia en el mercado</h2>
+
+  <p  >
+    Aunque BioPint se encuentra en <strong>fase de prototipo funcional</strong>, ya ha comenzado a generar interés en el ecosistema de innovación y sostenibilidad. 
+    Hemos presentado nuestra propuesta en eventos relacionados con el reciclaje y el emprendimiento social, recibiendo retroalimentación positiva por su enfoque ecológico, accesible y viable.
+  </p>
+
+  <p >
+    Actualmente trabajamos en:
+  </p>
+
+  <ul>
+    <li><strong>Alianzas con recicladores y comunidades locales</strong> para promover la producción colaborativa.</li>
+    <li><strong>Plan piloto de comercialización</strong> en zonas con alta generación de residuos plásticos.</li>
+    <li><strong>Participación en redes de economía circular</strong> y ferias de innovación para posicionar la marca.</li>
+  </ul>
+
+  <p >
+    Nuestro objetivo es validar la aceptación del producto, escalar su producción e impulsar un modelo comercial sostenible con impacto ambiental y social positivo.
+  </p>
+</section>
+
         
       </main>
 
