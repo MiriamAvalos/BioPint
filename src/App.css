@@ -5,11 +5,53 @@
   --beige: #b2a489;
 }
 
+/* ------------------------------------------------------------
+  1) Navbar fijo, centrado horizontalmente en pantallas grandes
+------------------------------------------------------------- */
+.custom-navbar {
+
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  background-color: transparent;
+
+
+}
+
+/* En móviles (≤576px), ocupará todo el ancho para mejor usabilidad */
+@media (max-width: 576px) {
+  .custom-navbar {
+    width: 100%;
+    left: 0;
+    transform: none;
+  }
+}
+
+/* ------------------------------------------------------------
+  2) Reservar espacio en el contenido para que no quede debajo
+     del navbar fijo
+------------------------------------------------------------- */
+body {
+  padding-top: 20px;
+}
+
+/* ------------------------------------------------------------
+  3) Tamaño del logo
+------------------------------------------------------------- */
+.logo-img {
+  height: 7rem;
+  width: auto;
+  object-fit: contain;
+}
+
+/* ------------------------------------------------------------
+  4) Estilos de los enlaces dentro del navbar
+------------------------------------------------------------- */
 .navbar-nav .nav-link {
   color: var(--oscuro) !important;
   letter-spacing: 1px !important;
   font-family: 'Nexa', sans-serif;
-  font-style: normal;
   font-size: 0.9rem;
   text-transform: uppercase;
   line-height: 160%;
@@ -17,28 +59,44 @@
   transition: color 0.3s ease;
 }
 
-.bg-transparent {
-  background-color: transparent !important;
-}
-
-/* Espaciado entre los ítems del menú */
-.navbar-nav .nav-item {
-  margin: 0 0.55rem;
-}
-
-/* Links al hacer hover*/
+/* Hover o link activo */
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link.active {
   color: var(--azul-pet) !important;
 }
 
-/* Botón hamburguesa (toggle) */
+/* Espaciado entre ítems del menú */
+.navbar-nav .nav-item {
+  margin: 0 0.55rem;
+}
+
+/* ------------------------------------------------------------
+  5) Botón hamburguesa transparente y con líneas oscuras
+------------------------------------------------------------- */
 .navbar-toggler {
   border-color: transparent !important;
+  background-color: transparent !important;
 }
 
-/* Icono hamburguesa*/
 .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%230B131B' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%230B131B' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"
+    ) !important;
 }
 
+/* ------------------------------------------------------------
+  6) Clases auxiliares de color
+------------------------------------------------------------- */
+.text-beige {
+  color: var(--beige) !important;
+}
+
+.text-success {
+  color: var(--verde) !important;
+}
+
+/* ------------------------------------------------------------
+  7) Mantener fondo transparente si se aplica .bg-transparent
+------------------------------------------------------------- */
+.bg-transparent {
+  background-color: transparent !important;
+}
