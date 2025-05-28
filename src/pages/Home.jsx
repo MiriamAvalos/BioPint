@@ -1,4 +1,7 @@
-import React from 'react';
+
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import WhatsappButton from '../components/WhatsappButton';
 import '../pages/Home.css';
 
@@ -10,13 +13,20 @@ import presentacion_cuatro from '../assets/images/presentacion4.jpg';
 
 
 
+
 function Home() {
+  
+
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <>
       <main className="home-container">
         <section className="intro">
-          <h1 className="title">Bienvenidos a BioPint</h1>
-          <p className="subtitle">
+          <h1 className="title" data-aos="zoom-in-down" >Bienvenidos a BioPint</h1>
+          <p className="subtitle" data-aos="zoom-in-up">
             Somos una empresa especializada en la fabricación
             y comercialización de pinturas ecológicas a base de
             PET reciclado.
