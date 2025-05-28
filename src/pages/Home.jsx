@@ -2,9 +2,11 @@ import React from 'react';
 import WhatsappButton from '../components/WhatsappButton';
 import '../pages/Home.css';
 
+
 function Home() {
   return (
     <>
+  
     <main className="home-container">
       <section className="intro">
         <h1 className="title">Bienvenidos a BioPint</h1>

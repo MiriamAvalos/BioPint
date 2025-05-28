@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import '../src/App.css';
 import Home from './pages/Home';
@@ -7,15 +7,18 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js'
-
+import SocialAndAddress from './components/SocialAndAddress';
 
 
 function App() {
   return (
+    <>
+       <SocialAndAddress />
     <Router>
       <div className="App">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <div className="container-fluid">
+         
+        <nav className="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+          <div className="container-fluid navbar-container">
             <Link className="navbar-brand" to="/"></Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,6 +51,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </>
   );
 }
 

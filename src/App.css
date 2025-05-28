@@ -16,6 +16,11 @@
   font-weight: 600;
   transition: color 0.3s ease;
 }
+
+.bg-transparent {
+  background-color: transparent !important;
+}
+
 /* Espaciado entre los ítems del menú */
 .navbar-nav .nav-item {
   margin: 0 0.55rem;
@@ -36,3 +41,4 @@
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='%230B131B' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
+
