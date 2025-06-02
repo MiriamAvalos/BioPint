@@ -1,12 +1,34 @@
-# React + Vite
+# BioPint - Pinturas Ecológicas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BioPint es una aplicación web desarrollada con React que presenta una empresa dedicada a la fabricación y comercialización de pinturas ecológicas hechas a base de PET reciclado. La aplicación muestra información sobre la empresa, sus valores, problemáticas ambientales, productos y un video de presentación. También incluye un botón de contacto vía WhatsApp.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características principales
 
-## Expanding the ESLint configuration
+- Página de inicio con información detallada sobre BioPint, sus valores, misión, visión y problemática ambiental.
+- Carrusel de imágenes.
+- Sección de productos con descripciones, imágenes y presentaciones.
+- Integración con AOS para animaciones al hacer scroll.
+- Video incrustado de YouTube para presentación.
+- Botón flotante para contacto vía WhatsApp.
+- Diseño responsivo.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## Tecnologías utilizadas
+
+- React
+- Vite
+- React Router
+- JavaScript
+- CSS
+- AOS (Animate On Scroll)
+- Bootstrap
+
+
+---
+
+## Proyecto desplegado
+
+biopint.vercel.app/
